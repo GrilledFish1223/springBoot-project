@@ -3,12 +3,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.ping.springboot.config</groupId>
-    <artifactId>sprinboot-config</artifactId>
+    <groupId>com.ping.springboot.properties</groupId>
+    <artifactId>springboot-properties</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>sprinboot-config</name>
+    <name>springboot-properties</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>
@@ -35,7 +35,6 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
 
     <build>

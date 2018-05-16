@@ -7,7 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="sprinboot-config" />
+        <module name="springboot-aop" />
         <module name="springboot-log" />
+        <module name="springboot-properties" />
+        <module name="springboot-xml" />
         <module name="springBootprojects1" />
       </profile>
     </annotationProcessing>

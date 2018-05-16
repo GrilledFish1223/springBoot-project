@@ -3,12 +3,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.ping.springboot.config</groupId>
-    <artifactId>sprinboot-config</artifactId>
+    <groupId>com.ping.springboot.aop</groupId>
+    <artifactId>springboot-aop</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>sprinboot-config</name>
+    <name>springboot-aop</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>
@@ -36,6 +36,11 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- aop -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
