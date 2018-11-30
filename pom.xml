@@ -11,8 +11,7 @@
     <modules>
         <module>sprinboot-config</module>
         <module>springboot-log</module>
-        <module>springboot-xml</module>
         <module>springboot-properties</module>
-        <module>springboot-aop</module>
+        <module>springboot-mybatis</module>
     </modules>
 </project>

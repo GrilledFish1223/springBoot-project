@@ -7,12 +7,26 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="sprinboot-config" />
-        <module name="springboot-aop" />
         <module name="springboot-log" />
+        <module name="springboot-mybatis" />
+        <module name="springBoot-project" />
         <module name="springboot-properties" />
-        <module name="springboot-xml" />
         <module name="springBootprojects1" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springboot-aop" target="1.8" />
+      <module name="springboot-xml" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="sprinboot-config" options="-parameters" />
+      <module name="springboot-aop" options="-parameters" />
+      <module name="springboot-log" options="-parameters" />
+      <module name="springboot-mybatis" options="-parameters" />
+      <module name="springboot-properties" options="-parameters" />
+      <module name="springboot-xml" options="-parameters" />
+    </option>
   </component>
 </project>
