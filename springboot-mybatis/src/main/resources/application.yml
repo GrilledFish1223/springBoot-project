@@ -26,8 +26,6 @@ spring:
     maxOpenPreparedStatements: 20
 
 
-
-
 #pagehelper分页插件
 pagehelper:
   helperDialect: mysql

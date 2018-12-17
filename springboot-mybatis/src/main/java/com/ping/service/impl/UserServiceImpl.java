@@ -15,4 +15,9 @@ public class UserServiceImpl implements UserService {
     public UserEntity selectUser(int id) {
         return userDao.selectUser(id);
     }
+
+    @Override
+    public int insert(UserEntity u) {
+        return userDao.insert(u);
+    }
 }

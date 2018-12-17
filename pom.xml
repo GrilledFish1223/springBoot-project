@@ -11,7 +11,7 @@
     <modules>
         <module>sprinboot-config</module>
         <module>springboot-log</module>
-        <module>springboot-properties</module>
+        <module>springboot-concurrency</module>
         <module>springboot-mybatis</module>
     </modules>
 </project>

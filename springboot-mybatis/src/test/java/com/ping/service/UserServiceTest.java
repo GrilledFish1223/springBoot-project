@@ -16,4 +16,16 @@ public class UserServiceTest extends BaseTest {
         Assert.assertEquals(1, user.getId());
         System.out.println(user.getUserSex());
     }
+
+    @Test
+    public void insertServiceTest() {
+        UserEntity u = UserEntity.builder()
+                .userName("pf")
+                .passWord("12580")
+                .userSex("男")
+                .nickName("srkj")
+                .build();
+
+
+    }
 }
