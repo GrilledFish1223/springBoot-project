@@ -11,7 +11,13 @@
     <modules>
         <module>sprinboot-config</module>
         <module>springboot-log</module>
-        <module>springboot-concurrency</module>
+        <module>springboot-redis</module>
         <module>springboot-mybatis</module>
+        <module>spring-kafka</module>
+        <module>springboot-test</module>
     </modules>
+
+    <packaging>pom</packaging>
+    <name>springboot</name>
+
 </project>

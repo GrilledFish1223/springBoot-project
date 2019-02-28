@@ -1,0 +1,12 @@
+2018-11-30 17:03:03,933 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user_entity WHERE id = ? 
+2018-11-30 17:03:04,284 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2018-11-30 17:07:24,088 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user_entity WHERE id = ? 
+2018-11-30 17:07:24,137 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2018-11-30 17:10:54,666 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user_entity WHERE id = ? 
+2018-11-30 17:10:54,701 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2018-11-30 17:12:36,958 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user_entity WHERE id = ? 
+2018-11-30 17:12:36,990 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2018-11-30 17:13:30,176 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user_entity WHERE id = ? 
+2018-11-30 17:13:30,240 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2018-11-30 17:18:11,513 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user_entity WHERE id = ? 
+2018-11-30 17:18:11,558 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)

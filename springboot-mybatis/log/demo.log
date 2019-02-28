@@ -1,0 +1,9 @@
+2018-11-30 17:20:39,562 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user_entity WHERE id = ? 
+2018-11-30 17:20:39,644 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2018-11-30 17:20:39,684 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-11-30 17:22:01,755 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user_entity WHERE id = ? 
+2018-11-30 17:22:01,783 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2018-11-30 17:22:01,844 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-11-30 17:23:07,737 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user_entity WHERE id = ? 
+2018-11-30 17:23:07,762 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2018-11-30 17:23:07,822 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
