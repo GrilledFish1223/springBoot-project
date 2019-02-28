@@ -1,12 +1,13 @@
-package com.ping.springboot.properties.springbootproperties;
+package com.ping.kafka;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringbootPropertiesApplication {
+public class SpringKafkaApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringbootPropertiesApplication.class, args);
+        SpringApplication.run(SpringKafkaApplication.class, args);
     }
+
 }

@@ -1,4 +1,4 @@
-package com.ping.springboot.properties.springbootproperties;
+package com.ping.kafka;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class SpringbootPropertiesApplicationTests {
+public class SpringKafkaApplicationTests {
 
     @Test
     public void contextLoads() {

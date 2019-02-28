@@ -1,0 +1,21 @@
+server:
+  port: 8099
+
+######################################### DATABASE ###################################
+spring:
+  datasource:
+    url: jdbc:postgresl://127.0.0.1:5432/test
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  kafka:
+    bootstrap-servers: 192.168.14.38:6667
+    consumer:
+      auto-commit-interval: 100
+      auto-offset-reset: latest
+      enable-auto-commit: false
+      group-id: test_group
+      max-poll-records: 5000
+    template:
+      default-topic: test_zsp
+######################################## KAFKA ######################################
