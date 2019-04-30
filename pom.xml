@@ -15,7 +15,7 @@
     <module>spring-kafka</module>
     <module>springboot-test</module>
     <module>springboot-mongo</module>
-    <module>spring-boot-docker</module>
+    <!--<module>spring-boot-docker</module>-->
 </modules>
 
 <packaging>pom</packaging>
