@@ -1,39 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ca88712-9d6d-4acb-afe4-ebaf8d9fdbb0" name="Default" comment="[DEL] module">
-      <change afterPath="$PROJECT_DIR$/.idea/springBoot-project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-aop/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-aop/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-aop/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-aop/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-aop/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-aop/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-aop/src/main/java/com/ping/springboot/aop/springbootaop/SpringbootAopApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-aop/src/main/java/com/ping/springboot/aop/springbootaop/annotation/Action.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-aop/src/main/java/com/ping/springboot/aop/springbootaop/aspect/LogAspect.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-aop/src/main/java/com/ping/springboot/aop/springbootaop/controller/Hellocontroller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-aop/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-aop/src/test/java/com/ping/springboot/aop/springbootaop/SpringbootAopApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-xml/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-xml/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-xml/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-xml/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-xml/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-xml/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-xml/src/main/java/com/ping/springboot/xml/noScan/NoScanService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-xml/src/main/java/com/ping/springboot/xml/scan/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-xml/src/main/java/com/ping/springboot/xml/scan/ScanService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-xml/src/main/resources/application-bean.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-xml/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-xml/src/test/java/com/ping/springboot/xml/springbootxml/SpringbootXmlApplicationTests.java" beforeDir="false" />
-    </list>
+    <list default="true" id="8ca88712-9d6d-4acb-afe4-ebaf8d9fdbb0" name="Default" comment="add swagger module" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/sprinboot-config/target/" />
@@ -42,11 +10,22 @@
     <ignored path="$PROJECT_DIR$/springboot-properties/target/" />
     <ignored path="$PROJECT_DIR$/springboot-aop/target/" />
     <ignored path="$PROJECT_DIR$/springboot-mybatis/target/" />
+    <ignored path="$PROJECT_DIR$/springboot-concurrency/target/" />
+    <ignored path="$PROJECT_DIR$/springboot-redis/target/" />
+    <ignored path="$PROJECT_DIR$/spring-kafka/target/" />
+    <ignored path="$PROJECT_DIR$/springboot-test/target/" />
+    <ignored path="$PROJECT_DIR$/springboot-mongo/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-docker/target/" />
+    <ignored path="$PROJECT_DIR$/springboot-thymeleaf/target/" />
+    <ignored path="$PROJECT_DIR$/springboot-swagger/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/springBoot_project$hello.coverage" NAME="hello Coverage Results" MODIFIED="1551324736404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kafka-py-test" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -62,102 +41,117 @@
     <expand />
     <select />
   </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-mybatis/src/test/java/com/ping/service/UserServiceTest.java">
+        <entry file="file://$PROJECT_DIR$/springboot-swagger/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot-swagger/src/main/resources/logback.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot-swagger/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot-swagger/src/main/java/com/ping/springbootswagger/config/SwaggerConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot-swagger/src/main/java/com/ping/springbootswagger/repository/MessageRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot-swagger/src/main/java/com/ping/springbootswagger/repository/InMemoryMessageRepository.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="361">
+              <caret line="31" column="25" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#808#809#0" expanded="true" />
+                <element signature="e#870#871#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot-swagger/src/main/java/com/ping/springbootswagger/model/Message.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot-swagger/src/main/java/com/ping/springbootswagger/model/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
               <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot-swagger/src/main/java/com/ping/springbootswagger/controller/MessageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1444">
+              <caret line="93" column="42" selection-start-line="93" selection-start-column="42" selection-end-line="93" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2744#2745#0" expanded="true" />
+                <element signature="e#2805#2806#0" expanded="true" />
+                <element signature="e#3130#3131#0" expanded="true" />
+                <element signature="e#3191#3192#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-mybatis/src/main/resources/logback-boot.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="66" column="18" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-mybatis/src/test/java/com/ping/SpringbootMybatisApplicationTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-mybatis/src/main/java/com/ping/service/impl/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#425#426#0" expanded="true" />
-                <element signature="e#470#471#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-mybatis/src/main/java/com/ping/SpringbootMybatisApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/springboot-swagger/src/main/java/com/ping/springbootswagger/config/BaseResult.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-mybatis/src/main/java/com/ping/bean/UserEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="475">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-mybatis/src/main/java/com/ping/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="20" column="45" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-mybatis/src/main/java/com/ping/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -168,67 +162,75 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Python Script" />
+        <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="zhangsp" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sprinboot-config/src/main/resources/banner.txt" />
-        <option value="$PROJECT_DIR$/sprinboot-config/src/main/java/com/ping/springboot/config/sprinbootconfig/SprinbootConfigApplication.java" />
-        <option value="$PROJECT_DIR$/sprinboot-config/src/main/java/com/ping/springboot/config/sprinbootconfig/entity/Article.java" />
-        <option value="$PROJECT_DIR$/sprinboot-config/src/main/java/com/ping/springboot/config/sprinbootconfig/controller/HelloController.java" />
-        <option value="$PROJECT_DIR$/sprinboot-config/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/springboot-log/src/main/resources/application-prod.properties" />
-        <option value="$PROJECT_DIR$/springboot-log/src/main/resources/application-dev.properties" />
-        <option value="$PROJECT_DIR$/springboot-log/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/springboot-xml/src/main/resources/application-bean.xml" />
-        <option value="$PROJECT_DIR$/springboot-xml/src/main/java/com/ping/springboot/xml/noScan/NoScanService.java" />
-        <option value="$PROJECT_DIR$/springboot-xml/src/main/java/com/ping/springboot/xml/scan/Application.java" />
-        <option value="$PROJECT_DIR$/springboot-xml/src/main/java/com/ping/springboot/xml/scan/ScanService.java" />
-        <option value="$PROJECT_DIR$/springboot-properties/src/main/java/com/ping/springboot/properties/springbootproperties/controller/HelloController.java" />
-        <option value="$PROJECT_DIR$/springboot-properties/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/springboot-aop/src/main/java/com/ping/springboot/aop/springbootaop/annotation/Action.java" />
-        <option value="$PROJECT_DIR$/springboot-aop/src/main/java/com/ping/springboot/aop/springbootaop/controller/Hellocontroller.java" />
-        <option value="$PROJECT_DIR$/sprinboot-config/pom.xml" />
-        <option value="$PROJECT_DIR$/springboot-aop/pom.xml" />
-        <option value="$PROJECT_DIR$/springboot-aop/src/main/java/com/ping/springboot/aop/springbootaop/aspect/LogAspect.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis/src/main/java/com/ping/springbootmybatis/bean/UserEntity.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/springboot-mybatis/src/main/java/com/ping/springbootmybatis/bean/UserEntity.sql" />
-        <option value="$PROJECT_DIR$/springboot-mybatis/src/main/java/com/ping/springbootmybatis/bean/UserEntityDao.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis/src/main/java/com/ping/springbootmybatis/service/UserEntityService.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis/src/test/java/com/ping/springbootmybatis/SpringbootMybatisApplicationTests.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis/src/main/java/com/ping/springbootmybatis/mapper/UserEntityDao.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis/src/main/resources/mybatis-config.xml" />
-        <option value="$PROJECT_DIR$/springboot-mybatis/src/main/java/com/ping/control/TestController.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis/src/main/resources/mybatis/mapper/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/springboot-mybatis/src/main/java/com/ping/service/UserEntityService.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis/src/main/resources/generator/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/springboot-mybatis/pom.xml" />
-        <option value="$PROJECT_DIR$/springboot-mybatis/src/main/java/com/ping/control/UserController.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/springboot-mybatis/src/test/java/com/ping/basic/BaseTest.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis/src/test/java/com/ping/controller/ControllerTestResult.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis/src/test/java/com/ping/controller/BaseControllerTest.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis/src/test/java/com/ping/controller/UserControllerTest.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis/src/test/java/com/ping/service/UserServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis/src/main/java/com/ping/SpringbootMybatisApplication.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis/src/main/java/com/ping/config/DataSourceConfig.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis/src/main/java/com/ping/mapper/UserEntityDao.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis/src/main/java/com/ping/bean/UserEntity.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis/src/main/java/com/ping/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis/src/main/java/com/ping/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis/src/main/java/com/ping/service/UserService.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis/src/test/java/com/ping/SpringbootMybatisApplicationTests.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis/src/test/java/com/ping/service/UserServiceTest.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis/src/main/resources/logback-boot.xml" />
+        <option value="$PROJECT_DIR$/springboot-test/src/main/java/com/ping/kafka/producer/KafkaProducerTest.java" />
+        <option value="$PROJECT_DIR$/spring-kafka/src/main/java/com/ping/kafka/consumer/KafkaConsumerConfig.java" />
+        <option value="$PROJECT_DIR$/spring-kafka/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/kafka-py-test/kafka-producer/__init__.py" />
+        <option value="$PROJECT_DIR$/springboot-test/src/main/java/com/ping/copymanger/CopyToFile.java" />
+        <option value="$PROJECT_DIR$/springboot-test/src/main/java/com/ping/basic/ThinkingInJacaCharacter3.java" />
+        <option value="$PROJECT_DIR$/springboot-test/src/main/java/com/ping/common/utils/FileIoUtils.java" />
+        <option value="$PROJECT_DIR$/springboot-mongo/src/main/java/com/ping/mongo/entity/MongoTest.java" />
+        <option value="$PROJECT_DIR$/springboot-mongo/src/main/java/com/ping/mongo/dao/MongoTestDao.java" />
+        <option value="$PROJECT_DIR$/springboot-mongo/src/main/java/com/ping/mongo/controller/MongoTestController.java" />
+        <option value="$PROJECT_DIR$/springboot-mongo/src/main/resources/application.yml" />
+        <option value="$USER_HOME$/.m2/settings.xml" />
+        <option value="$PROJECT_DIR$/springboot-test/src/main/java/com/ping/copymanger/CopyManagerUtils.java" />
+        <option value="$PROJECT_DIR$/springboot-test/src/main/java/com/ping/SpringbootTestApplication.java" />
+        <option value="$PROJECT_DIR$/springboot-test/src/main/java/com/ping/Controller.java" />
+        <option value="$PROJECT_DIR$/springboot-test/src/main/java/com/ping/WelcomeController.java" />
+        <option value="$PROJECT_DIR$/springboot-test/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-test/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/springboot-test/src/main/java/com/ping/ServletInitalizer.java" />
+        <option value="$PROJECT_DIR$/springboot-test/src/main/java/com/ping/controller/WelcomeController.java" />
+        <option value="$PROJECT_DIR$/springboot-test/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/springboot-test/src/test/java/com/ping/SpringbootTestApplicationTests.java" />
+        <option value="$PROJECT_DIR$/springboot-test/README.md" />
+        <option value="$PROJECT_DIR$/springboot-log/src/main/java/com/ping/springboot/log/springbootlog/controller/DockerConstroller.java" />
+        <option value="$PROJECT_DIR$/springboot-log/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-docker/src/main/docker/Dockerfile" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/spring-boot-docker/README.md" />
+        <option value="$PROJECT_DIR$/spring-boot-docker/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-thymeleaf/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/springboot-thymeleaf/src/main/java/com/ping/springbootthymeleaf/controller/HelloController.java" />
+        <option value="$PROJECT_DIR$/springboot-thymeleaf/src/main/resources/templates/string.html" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-thymeleaf/src/test/java/com/ping/springbootthymeleaf/SpringbootThymeleafApplicationTests.java" />
+        <option value="$PROJECT_DIR$/springboot-thymeleaf/src/main/resources/templates/if.html" />
+        <option value="$PROJECT_DIR$/springboot-thymeleaf/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-thymeleaf/src/main/java/com/ping/springbootthymeleaf/model/User.java" />
+        <option value="$PROJECT_DIR$/springboot-thymeleaf/src/main/resources/templates/list.html" />
+        <option value="$PROJECT_DIR$/springboot-thymeleaf/src/main/resources/templates/inline.html" />
+        <option value="$PROJECT_DIR$/springboot-thymeleaf/src/main/java/com/ping/springbootthymeleaf/controller/ExampleController.java" />
+        <option value="$PROJECT_DIR$/springboot-thymeleaf/src/main/resources/templates/object.html" />
+        <option value="$PROJECT_DIR$/springboot-thymeleaf/README.md" />
+        <option value="$PROJECT_DIR$/springboot-swagger/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-swagger/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/springboot-swagger/src/main/java/com/ping/springbootswagger/config/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/springboot-swagger/src/main/java/com/ping/springbootswagger/model/Message.java" />
+        <option value="$PROJECT_DIR$/springboot-swagger/src/main/java/com/ping/springbootswagger/model/User.java" />
+        <option value="$PROJECT_DIR$/springboot-swagger/src/main/java/com/ping/springbootswagger/config/BaseResult.java" />
+        <option value="$PROJECT_DIR$/springboot-swagger/src/main/java/com/ping/springbootswagger/repository/MessageRepository.java" />
+        <option value="$PROJECT_DIR$/springboot-swagger/src/main/java/com/ping/springbootswagger/repository/InMemoryMessageRepository.java" />
+        <option value="$PROJECT_DIR$/springboot-swagger/src/main/java/com/ping/springbootswagger/controller/MessageController.java" />
       </list>
     </option>
   </component>
@@ -236,8 +238,9 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="C:\Users\huangyicao\.m2\repository" />
-        <option name="mavenHome" value="$USER_HOME$/huangyicao/apache-maven-3.6.0" />
+        <option name="mavenHome" value="$USER_HOME$/zhangsp/apache-maven-3.6.0" />
         <option name="userSettingsFile" value="C:\Users\huangyicao\.m2\settings.xml" />
+        <option name="workOffline" value="true" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -251,43 +254,64 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="springboot-mybatis" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="spring-boot-docker" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="springboot-mybatis" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="springboot-mybatis" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="mybatis-generator" type="36feed69:MavenProjectsStructure$PluginNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="springboot-mybatis" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="spring-boot-docker" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-boot-docker" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="org.springframework.boot:spring-boot-starter-web:2.0.5.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="springboot-log" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="springboot-log" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="springboot-test" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="springboot-test" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="springboot-test" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="59" />
-    <option name="y" value="39" />
-    <option name="width" value="1061" />
-    <option name="height" value="656" />
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1491" />
+    <option name="width" value="1430" />
+    <option name="height" value="870" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <flattenPackages ProjectPane="false" />
+      <hideEmptyPackages ProjectPane="false" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -298,45 +322,163 @@
             <path>
               <item name="springBoot-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="springBoot-project" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-swagger" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springBoot-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springBoot-project" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-swagger" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springBoot-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springBoot-project" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-swagger" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springBoot-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springBoot-project" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-swagger" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springBoot-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springBoot-project" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-swagger" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springBoot-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springBoot-project" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-swagger" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ping" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springBoot-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springBoot-project" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-swagger" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ping" type="462c0819:PsiDirectoryNode" />
+              <item name="springbootswagger" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springBoot-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springBoot-project" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-swagger" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ping" type="462c0819:PsiDirectoryNode" />
+              <item name="springbootswagger" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springBoot-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springBoot-project" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-swagger" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ping" type="462c0819:PsiDirectoryNode" />
+              <item name="springbootswagger" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springBoot-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springBoot-project" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-swagger" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ping" type="462c0819:PsiDirectoryNode" />
+              <item name="springbootswagger" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springBoot-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springBoot-project" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-swagger" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ping" type="462c0819:PsiDirectoryNode" />
+              <item name="springbootswagger" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="GO_FMT" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543570551340" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557104066568" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="jdk.selected.PYTHON_MODULE" value="Python 2.7" />
+    <property name="last_opened_file_path" value="$USER_HOME$/zhangsp/docker-maven-plugin-0.0.24.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.ping.service" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\huangyicao\program\springBoot-project\springboot-mybatis\src\main\resources\mybatis\mapper" />
-      <recent name="C:\Users\huangyicao\program\springBoot-project\springboot-mybatis\src\main\java\com\ping\springbootmybatis\mapper" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\huangyicao\program\springBoot-project\springboot-thymeleaf\src\main\resources\templates" />
+      <recent name="C:\Users\huangyicao\program\springBoot-project\springboot-test\src\main\webapp\WEB-INF\jsp" />
+      <recent name="C:\Users\huangyicao\program\springBoot-project\springboot-test\src\main\resources\static" />
+      <recent name="C:\Users\huangyicao\program\springBoot-project\kafka-py-test\kafka-producer" />
+      <recent name="C:\Users\huangyicao\program\springBoot-project\kafka-py-test" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.ping.springboot" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ping.thread" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\huangyicao\program\springBoot-project\springboot-swagger\src\main\resources" />
+      <recent name="C:\Users\huangyicao\program\springBoot-project\springboot-test\src\main\resources" />
+      <recent name="C:\Users\huangyicao\program\springBoot-project\springboot-test\src\main" />
       <recent name="C:\Users\huangyicao\program\springBoot-project\springboot-mybatis\src\main\resources" />
     </key>
   </component>
@@ -352,21 +494,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringbootMybatis">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ping.springboot.xml.scan.Application" />
-      <module name="springboot-xml" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ping.springboot.xml.scan.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.SpringbootSwaggerApplication">
     <configuration name="SprinbootConfigApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ping.springboot.config.sprinbootconfig.SprinbootConfigApplication" />
       <module name="sprinboot-config" />
@@ -387,8 +515,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringbootMybatisApplicationTests.testUserService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot-mybatis" />
+    <configuration name="SpringbootTestApplicationTests.welcomeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ping.*" />
@@ -396,42 +524,59 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ping" />
-      <option name="MAIN_CLASS_NAME" value="com.ping.SpringbootMybatisApplicationTests" />
-      <option name="METHOD_NAME" value="testUserService" />
+      <option name="MAIN_CLASS_NAME" value="com.ping.SpringbootTestApplicationTests" />
+      <option name="METHOD_NAME" value="welcomeTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserControllerTest.records" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot-mybatis" />
+    <configuration name="SpringbootThymeleafApplicationTests.ifTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-thymeleaf" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ping.controller.*" />
+          <option name="PATTERN" value="com.ping.springbootthymeleaf.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ping.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.ping.controller.UserControllerTest" />
-      <option name="METHOD_NAME" value="records" />
+      <option name="PACKAGE_NAME" value="com.ping.springbootthymeleaf" />
+      <option name="MAIN_CLASS_NAME" value="com.ping.springbootthymeleaf.SpringbootThymeleafApplicationTests" />
+      <option name="METHOD_NAME" value="ifTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.records" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot-mybatis" />
+    <configuration name="SpringbootThymeleafApplicationTests.stringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-thymeleaf" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ping.service.*" />
+          <option name="PATTERN" value="com.ping.springbootthymeleaf.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ping.service" />
-      <option name="MAIN_CLASS_NAME" value="com.ping.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="records" />
+      <option name="PACKAGE_NAME" value="com.ping.springbootthymeleaf" />
+      <option name="MAIN_CLASS_NAME" value="com.ping.springbootthymeleaf.SpringbootThymeleafApplicationTests" />
+      <option name="METHOD_NAME" value="stringTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootThymeleafApplicationTests.welcomeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-thymeleaf" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ping.springbootthymeleaf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ping.springbootthymeleaf" />
+      <option name="MAIN_CLASS_NAME" value="com.ping.springbootthymeleaf.SpringbootThymeleafApplicationTests" />
+      <option name="METHOD_NAME" value="welcomeTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -444,6 +589,56 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="springboot-test [spring-boot:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="spring-boot:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map>
+                <entry key="pom.xml" value="true" />
+              </map>
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/springboot-test" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="kafka-producer" type="Python.DjangoServer" factoryName="Django server">
+      <module name="kafka-producer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="springboot-xml" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ping.springboot.xml.scan.Application" />
@@ -454,6 +649,20 @@
     <configuration name="SprinbootConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="sprinboot-config" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ping.springboot.config.sprinbootconfig.SprinbootConfigApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootDockerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-docker" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ping.SpringBootDockerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringKafkaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-kafka" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ping.kafka.SpringKafkaApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -472,6 +681,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringbootMongoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot-mongo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ping.mongo.SpringbootMongoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringbootMybatis" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="springboot-mybatis" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ping.SpringbootMybatisApplication" />
@@ -480,9 +696,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringbootPropertiesApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot-thread" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ping.springboot.SpringbootPropertiesApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringbootPropertiesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="springboot-properties" />
+      <module name="springboot-thread" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ping.springboot.properties.springbootproperties.SpringbootPropertiesApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootRedisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot-redis" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ping.SpringbootRedisApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootSwaggerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot-swagger" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ping.springbootswagger.SpringbootSwaggerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot-test" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ping.SpringbootTestApplication" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/springboot-test" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootThymeleafApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot-thymeleaf" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ping.springbootthymeleaf.SpringbootThymeleafApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -495,25 +748,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="docker/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="spring-boot-docker/src/main/docker/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.SprinbootConfigApplication" />
-      <item itemvalue="Application.Application" />
+      <item itemvalue="Django server.kafka-producer" />
+      <item itemvalue="Docker.docker/Dockerfile" />
+      <item itemvalue="JUnit.SpringbootTestApplicationTests.welcomeTest" />
+      <item itemvalue="JUnit.SpringbootThymeleafApplicationTests.welcomeTest" />
+      <item itemvalue="JUnit.SpringbootThymeleafApplicationTests.stringTest" />
+      <item itemvalue="JUnit.SpringbootThymeleafApplicationTests.ifTest" />
+      <item itemvalue="Maven.springboot-test [spring-boot:run]" />
       <item itemvalue="Spring Boot.SpringbootMybatis" />
       <item itemvalue="Spring Boot.SpringbootPropertiesApplication" />
       <item itemvalue="Spring Boot.SpringbootAopApplication" />
       <item itemvalue="Spring Boot.SprinbootConfigApplication" />
       <item itemvalue="Spring Boot.SpringbootLogApplication" />
       <item itemvalue="Spring Boot.Application" />
-      <item itemvalue="JUnit.SpringbootMybatisApplicationTests.testUserService" />
-      <item itemvalue="JUnit.UserControllerTest.records" />
-      <item itemvalue="JUnit.UserServiceTest.records" />
+      <item itemvalue="Spring Boot.SpringbootPropertiesApplication (1)" />
+      <item itemvalue="Spring Boot.SpringbootRedisApplication" />
+      <item itemvalue="Spring Boot.SpringKafkaApplication" />
+      <item itemvalue="Spring Boot.SpringbootTestApplication" />
+      <item itemvalue="Spring Boot.SpringbootMongoApplication" />
+      <item itemvalue="Spring Boot.SpringBootDockerApplication" />
+      <item itemvalue="Spring Boot.SpringbootThymeleafApplication" />
+      <item itemvalue="Spring Boot.SpringbootSwaggerApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserServiceTest.records" />
-        <item itemvalue="JUnit.UserControllerTest.records" />
-        <item itemvalue="JUnit.SpringbootMybatisApplicationTests.testUserService" />
-        <item itemvalue="Application.Application" />
+        <item itemvalue="JUnit.SpringbootThymeleafApplicationTests.ifTest" />
+        <item itemvalue="JUnit.SpringbootThymeleafApplicationTests.stringTest" />
+        <item itemvalue="JUnit.SpringbootThymeleafApplicationTests.welcomeTest" />
+        <item itemvalue="Docker.docker/Dockerfile" />
+        <item itemvalue="JUnit.SpringbootTestApplicationTests.welcomeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -531,7 +804,29 @@
       <workItem from="1526454275630" duration="5891000" />
       <workItem from="1543456128227" duration="2783000" />
       <workItem from="1543459411449" duration="3482000" />
-      <workItem from="1543462970515" duration="25414000" />
+      <workItem from="1543462970515" duration="26134000" />
+      <workItem from="1543798675340" duration="18091000" />
+      <workItem from="1545095548573" duration="3425000" />
+      <workItem from="1545464371840" duration="2141000" />
+      <workItem from="1546667280238" duration="595000" />
+      <workItem from="1547630378430" duration="8783000" />
+      <workItem from="1551321520451" duration="8660000" />
+      <workItem from="1551345226039" duration="7326000" />
+      <workItem from="1551405316599" duration="3297000" />
+      <workItem from="1551874705967" duration="578000" />
+      <workItem from="1551928272541" duration="11850000" />
+      <workItem from="1552273675263" duration="21355000" />
+      <workItem from="1552716190168" duration="4963000" />
+      <workItem from="1552878763159" duration="5417000" />
+      <workItem from="1552983668494" duration="588000" />
+      <workItem from="1553071768886" duration="3586000" />
+      <workItem from="1553150596773" duration="62000" />
+      <workItem from="1553476081482" duration="16383000" />
+      <workItem from="1556095803292" duration="5507000" />
+      <workItem from="1556105561728" duration="1762000" />
+      <workItem from="1556107478760" duration="24390000" />
+      <workItem from="1557036075783" duration="7885000" />
+      <workItem from="1557121450078" duration="5000" />
     </task>
     <task id="LOCAL-00001" summary="[ADD] mybatis test!">
       <created>1543570299413</created>
@@ -540,49 +835,134 @@
       <option name="project" value="LOCAL" />
       <updated>1543570299429</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="[DEL] delete module xml and aop">
+      <created>1543570598624</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1543570598624</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add jdk 1.8 thread test and completableFuture">
+      <created>1545038582724</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1545038582728</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add jdk 1.8 thread test and completableFuture">
+      <created>1551357871695</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1551357871696</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add kafka">
+      <created>1551358011684</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1551358011685</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add druid">
+      <created>1551358124608</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1551358124608</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add redis">
+      <created>1551358207858</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1551358207858</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add test">
+      <created>1551358349291</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1551358349291</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add test">
+      <created>1551358606836</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1551358606836</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add thymeleaf module">
+      <created>1556273713463</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1556273713463</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add thymeleaf module,and example for html">
+      <created>1556618802102</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1556618802102</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add swagger module">
+      <created>1557063430304</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1557063430304</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserServiceTest_records - 2018.11.30 at 17h 00m 29s.xml">
-      <configuration name="UserServiceTest.records" configurationId="JUnit" />
+    <history-entry file="SpringbootTestApplicationTests_welcomeTest - 2019.04.24 at 20h 25m 25s.xml">
+      <configuration name="SpringbootTestApplicationTests.welcomeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserControllerTest_records - 2018.11.30 at 17h 03m 04s.xml">
-      <configuration name="UserControllerTest.records" configurationId="JUnit" />
+    <history-entry file="SpringbootTestApplicationTests_welcomeTest - 2019.04.25 at 14h 28m 49s.xml">
+      <configuration name="SpringbootTestApplicationTests.welcomeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserControllerTest_records - 2018.11.30 at 17h 07m 24s.xml">
-      <configuration name="UserControllerTest.records" configurationId="JUnit" />
+    <history-entry file="SpringbootThymeleafApplicationTests_welcomeTest - 2019.04.26 at 18h 04m 49s.xml">
+      <configuration name="SpringbootThymeleafApplicationTests.welcomeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserControllerTest_records - 2018.11.30 at 17h 10m 55s.xml">
-      <configuration name="UserControllerTest.records" configurationId="JUnit" />
+    <history-entry file="SpringbootThymeleafApplicationTests_stringTest - 2019.04.30 at 16h 07m 46s.xml">
+      <configuration name="SpringbootThymeleafApplicationTests.stringTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserControllerTest_records - 2018.11.30 at 17h 12m 37s.xml">
-      <configuration name="UserControllerTest.records" configurationId="JUnit" />
+    <history-entry file="SpringbootThymeleafApplicationTests_stringTest - 2019.04.30 at 16h 08m 30s.xml">
+      <configuration name="SpringbootThymeleafApplicationTests.stringTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest_records - 2018.11.30 at 17h 13m 30s.xml">
-      <configuration name="UserServiceTest.records" configurationId="JUnit" />
+    <history-entry file="SpringbootThymeleafApplicationTests_stringTest - 2019.04.30 at 16h 12m 55s.xml">
+      <configuration name="SpringbootThymeleafApplicationTests.stringTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest_records - 2018.11.30 at 17h 18m 11s.xml">
-      <configuration name="UserServiceTest.records" configurationId="JUnit" />
+    <history-entry file="SpringbootThymeleafApplicationTests_stringTest - 2019.04.30 at 16h 17m 41s.xml">
+      <configuration name="SpringbootThymeleafApplicationTests.stringTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest_records - 2018.11.30 at 17h 20m 40s.xml">
-      <configuration name="UserServiceTest.records" configurationId="JUnit" />
+    <history-entry file="SpringbootThymeleafApplicationTests_stringTest - 2019.04.30 at 16h 17m 42s.xml">
+      <configuration name="SpringbootThymeleafApplicationTests.stringTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest_records - 2018.11.30 at 17h 22m 02s.xml">
-      <configuration name="UserServiceTest.records" configurationId="JUnit" />
+    <history-entry file="SpringbootThymeleafApplicationTests_stringTest - 2019.04.30 at 16h 18m 31s.xml">
+      <configuration name="SpringbootThymeleafApplicationTests.stringTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest_records - 2018.11.30 at 17h 23m 08s.xml">
-      <configuration name="UserServiceTest.records" configurationId="JUnit" />
+    <history-entry file="SpringbootThymeleafApplicationTests_ifTest - 2019.04.30 at 16h 36m 37s.xml">
+      <configuration name="SpringbootThymeleafApplicationTests.ifTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41001000" />
+    <option name="totallyTimeSpent" value="198370000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1608" height="864" extended-state="6" />
-    <editor active="true" />
+    <frame x="1491" y="0" width="1430" height="870" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22721438" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29385966" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -591,17 +971,17 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.53351206" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49935815" weight="0.6689008" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3291536" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.48106593" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49935815" weight="0.6547455" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3297587" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5006418" side_tool="true" weight="0.6689008" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32841823" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3287483" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.3287483" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49935317" weight="0.46002805" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5006468" side_tool="true" weight="0.3287483" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3260188" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32959327" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
@@ -611,11 +991,12 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.329429" />
-      <window_info anchor="right" id="Database" order="6" weight="0.32991013" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" weight="0.32991013" />
-      <window_info anchor="right" id="Maven" order="10" weight="0.32991013" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Database" order="8" weight="0.3287311" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.32938856" />
+      <window_info anchor="right" id="Maven" order="10" weight="0.49342105" />
+      <window_info anchor="right" id="SciView" order="11" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3228498" />
@@ -659,439 +1040,394 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[ADD] mybatis test!" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD] mybatis test!" />
+    <MESSAGE value="[DEL] delete module xml and aop" />
+    <MESSAGE value="[A] study kafka test" />
+    <MESSAGE value="add jdk 1.8 thread test and completableFuture" />
+    <MESSAGE value="add kafka" />
+    <MESSAGE value="add druid" />
+    <MESSAGE value="add redis" />
+    <MESSAGE value="add test" />
+    <MESSAGE value="add thymeleaf module" />
+    <MESSAGE value="add thymeleaf module,and example for html" />
+    <MESSAGE value="add swagger module" />
+    <option name="LAST_COMMIT_MESSAGE" value="add swagger module" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>receiveCommandStatus()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>e.getSQLState()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sprinboot-config/src/main/java/com/ping/springboot/config/sprinbootconfig/entity/Article.java">
+    <entry file="file://$PROJECT_DIR$/springboot-test/src/main/resources/webapp/WEB-INF/jsp/user.jsp" />
+    <entry file="file://$PROJECT_DIR$/springboot-test/src/main/resources/application.yml" />
+    <entry file="file://$PROJECT_DIR$/springboot-test/src/main/java/com/ping/ServletInitalizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#256#257#0" expanded="true" />
-            <element signature="e#296#297#0" expanded="true" />
-            <element signature="e#328#329#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#390#391#0" expanded="true" />
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sprinboot-config/src/main/java/com/ping/springboot/config/sprinbootconfig/controller/HelloController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="19" column="107" selection-start-line="19" selection-start-column="107" selection-end-line="19" selection-end-column="107" />
+        <state relative-caret-position="304">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sprinboot-config/src/main/java/com/ping/springboot/config/sprinbootconfig/SprinbootConfigApplication.java">
+    <entry file="file://$PROJECT_DIR$/springboot-test/src/main/java/com/ping/SpringbootTestApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-log/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-xml/src/main/resources/application-bean.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-xml/src/main/java/com/ping/springboot/xml/springbootxml/SpringbootXmlApplication.java" />
-    <entry file="file://$PROJECT_DIR$/springboot-xml/src/main/java/com/ping/springboot/xml/scan/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="13" column="59" lean-forward="true" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#174#175#0" expanded="true" />
-            <element signature="e#249#250#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sprinboot-config/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-properties/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-properties/src/main/java/com/ping/springboot/properties/springbootproperties/controller/HelloController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#385#402#1" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-properties/src/main/java/com/ping/springboot/properties/springbootproperties/SpringbootPropertiesApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
+        <state relative-caret-position="95">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
-            <element signature="e#297#298#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sprinboot-config/src/main/resources/banner.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="8" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-aop/src/main/java/com/ping/springboot/aop/springbootaop/SpringbootAopApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-aop/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-aop/src/main/java/com/ping/springboot/aop/springbootaop/aspect/LogAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="10" column="63" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-aop/src/main/java/com/ping/springboot/aop/springbootaop/controller/Hellocontroller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#494#495#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-aop/src/main/java/com/ping/springboot/aop/springbootaop/annotation/Action.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-log/src/main/resources/application-prod.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-log/src/main/resources/application-dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-log/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis/src/main/java/com/ping/springbootmybatis/bean/UserEntity.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis/src/main/java/com/ping/control/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#274#275#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis/src/main/resources/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis/src/main/resources/mybatis/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-xml/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-668" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-properties/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-654" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sprinboot-config/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis/src/main/resources/generator/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="110" column="55" selection-start-line="110" selection-start-column="48" selection-end-line="110" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/postgresql/postgresql/42.2.5/postgresql-42.2.5.jar!/org/postgresql/Driver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="11" selection-start-line="11" selection-end-line="25" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis/src/test/java/com/ping/basic/BaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis/src/test/java/com/ping/controller/ControllerTestResult.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.0.9.RELEASE/spring-context-5.0.9.RELEASE.jar!/org/springframework/validation/support/BindingAwareModelMap.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis/src/test/java/com/ping/controller/BaseControllerTest.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.9.RELEASE/spring-web-5.0.9.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#444#445#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-            <element signature="e#514#515#0" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#662#663#0" expanded="true" />
-            <element signature="e#698#699#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="127">
+          <caret line="120" column="13" lean-forward="true" selection-start-line="120" selection-start-column="13" selection-end-line="120" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis/src/test/java/com/ping/service/UserServiceImplTest.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/reflect/Method.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        <state relative-caret-position="19">
+          <caret line="497" selection-start-line="497" selection-end-line="497" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis/src/main/java/com/ping/config/DataSourceConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis/src/test/java/com/ping/controller/UserControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis/src/main/java/com/ping/mapper/UserEntityDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis/src/main/java/com/ping/bean/UserEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis/src/main/java/com/ping/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="20" column="45" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis/src/main/java/com/ping/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis/src/main/java/com/ping/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis/src/test/java/com/ping/SpringbootMybatisApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="235" column="35" selection-start-line="235" selection-start-column="23" selection-end-line="235" selection-end-column="35" />
-          <folding>
-            <element signature="e#8323#8324#0" expanded="true" />
-            <element signature="e#8383#8384#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis/src/test/java/com/ping/service/UserServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis/src/main/resources/logback-boot.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="66" column="18" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-xml/src/main/java/com/ping/springboot/xml/noScan/NoScanService.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/sun/reflect/DelegatingMethodAccessorImpl.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
-          <caret line="12" column="67" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-test/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-test/src/main/webapp/WEB-INF/jsp/welcome.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-log/src/main/java/com/ping/springboot/log/springbootlog/controller/DockerConstroller.java" />
+    <entry file="file://$PROJECT_DIR$/springboot-log/src/main/java/com/ping/springboot/log/springbootlog/SpringbootLogApplication.java" />
+    <entry file="file://$PROJECT_DIR$/springboot-log/src/main/resources/application.properties" />
+    <entry file="file://$PROJECT_DIR$/springboot-log/src/main/resources/application-dev.properties" />
+    <entry file="file://$PROJECT_DIR$/springboot-log/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/springboot-test/src/main/java/com/ping/controller/WelcomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
-            <element signature="e#219#220#0" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-xml/src/main/java/com/ping/springboot/xml/scan/ScanService.java">
+    <entry file="file://$PROJECT_DIR$/spring-boot-docker/src/main/docker/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        <state relative-caret-position="57">
+          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis/src/main/java/com/ping/SpringbootMybatisApplication.java">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="57">
+            <caret line="3" selection-start-line="3" selection-end-line="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-test/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="409">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-test/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="399">
+            <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-docker/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="365">
+            <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-test/src/test/java/com/ping/SpringbootTestApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="32" column="5" selection-start-line="19" selection-start-column="2" selection-end-line="32" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-thymeleaf/src/main/java/com/ping/springbootthymeleaf/controller/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-thymeleaf/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-thymeleaf/src/main/resources/templates/string.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
-          <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-thymeleaf/src/main/resources/templates/hello.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-thymeleaf/src/test/java/com/ping/springbootthymeleaf/SpringbootThymeleafApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-kafka/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="45" column="21" lean-forward="true" selection-start-line="41" selection-start-column="7" selection-end-line="45" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-docker/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sprinboot-config/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-thymeleaf/src/main/java/com/ping/springbootthymeleaf/SpringbootThymeleafApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-thymeleaf/src/main/resources/templates/if.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="84" selection-start-line="11" selection-start-column="75" selection-end-line="11" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-thymeleaf/src/main/java/com/ping/springbootthymeleaf/controller/ExampleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1007">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-thymeleaf/src/main/resources/templates/object.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-thymeleaf/src/main/resources/templates/inline.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-thymeleaf/src/main/java/com/ping/springbootthymeleaf/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-thymeleaf/src/main/resources/templates/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-thymeleaf/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="43" column="20" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-thymeleaf/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="550">
+            <caret line="349" selection-start-line="349" selection-end-line="349" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-swagger/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-swagger/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-swagger/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-swagger/src/main/java/com/ping/springbootswagger/config/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-swagger/src/main/java/com/ping/springbootswagger/repository/MessageRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-swagger/src/main/java/com/ping/springbootswagger/repository/InMemoryMessageRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="31" column="25" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#870#871#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-swagger/src/main/java/com/ping/springbootswagger/model/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-swagger/src/main/java/com/ping/springbootswagger/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-swagger/src/main/java/com/ping/springbootswagger/controller/MessageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1444">
+          <caret line="93" column="42" selection-start-line="93" selection-start-column="42" selection-end-line="93" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2744#2745#0" expanded="true" />
+            <element signature="e#2805#2806#0" expanded="true" />
+            <element signature="e#3130#3131#0" expanded="true" />
+            <element signature="e#3191#3192#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-swagger/src/main/java/com/ping/springbootswagger/config/BaseResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1101,10 +1437,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>springboot-test:war</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1112,7 +1450,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring</last-edited>
+          <last-edited>Django (kafka-producer)|Django</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1124,6 +1462,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Python 2.7 interpreter library</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1147,7 +1486,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Web|springboot-mybatis</last-edited>
+          <last-edited>kafka-producer</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

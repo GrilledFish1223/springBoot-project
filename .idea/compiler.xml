@@ -7,26 +7,43 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="sprinboot-config" />
-        <module name="springboot-log" />
+        <module name="spring-boot-docker" />
+        <module name="spring-kafka" />
+        <module name="springboot-mongo" />
         <module name="springboot-mybatis" />
-        <module name="springBoot-project" />
-        <module name="springboot-properties" />
+        <module name="springboot-redis" />
+        <module name="springboot-swagger" />
+        <module name="springboot-test" />
+        <module name="springboot-thymeleaf" />
         <module name="springBootprojects1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="springboot-aop" target="1.8" />
-      <module name="springboot-xml" target="1.8" />
+      <module name="sprinboot-config" target="1.8" />
+      <module name="spring-boot-docker" target="1.8" />
+      <module name="spring-kafka" target="1.8" />
+      <module name="springboot-log" target="1.8" />
+      <module name="springboot-mongo" target="1.8" />
+      <module name="springboot-mybatis" target="1.8" />
+      <module name="springBoot-project" target="1.5" />
+      <module name="springboot-redis" target="1.8" />
+      <module name="springboot-swagger" target="1.8" />
+      <module name="springboot-test" target="1.8" />
+      <module name="springboot-thymeleaf" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="sprinboot-config" options="-parameters" />
-      <module name="springboot-aop" options="-parameters" />
+      <module name="spring-boot-docker" options="-parameters" />
+      <module name="spring-kafka" options="-parameters" />
       <module name="springboot-log" options="-parameters" />
+      <module name="springboot-mongo" options="-parameters" />
       <module name="springboot-mybatis" options="-parameters" />
-      <module name="springboot-properties" options="-parameters" />
-      <module name="springboot-xml" options="-parameters" />
+      <module name="springboot-redis" options="-parameters" />
+      <module name="springboot-swagger" options="-parameters" />
+      <module name="springboot-test" options="-parameters" />
+      <module name="springboot-thymeleaf" options="-parameters" />
     </option>
   </component>
 </project>

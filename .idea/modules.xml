@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/kafka-py-test/kafka-producer/kafka-producer.iml" filepath="$PROJECT_DIR$/kafka-py-test/kafka-producer/kafka-producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kafka-py-test/kafka-py-test.iml" filepath="$PROJECT_DIR$/kafka-py-test/kafka-py-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sprinboot-config/sprinboot-config.iml" filepath="$PROJECT_DIR$/sprinboot-config/sprinboot-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-docker/spring-boot-docker.iml" filepath="$PROJECT_DIR$/spring-boot-docker/spring-boot-docker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-kafka/spring-kafka.iml" filepath="$PROJECT_DIR$/spring-kafka/spring-kafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/springBoot-project.iml" filepath="$PROJECT_DIR$/.idea/springBoot-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-mongo/springboot-mongo.iml" filepath="$PROJECT_DIR$/springboot-mongo/springboot-mongo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-mybatis/springboot-mybatis.iml" filepath="$PROJECT_DIR$/springboot-mybatis/springboot-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-redis/springboot-redis.iml" filepath="$PROJECT_DIR$/springboot-redis/springboot-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-swagger/springboot-swagger.iml" filepath="$PROJECT_DIR$/springboot-swagger/springboot-swagger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-test/springboot-test.iml" filepath="$PROJECT_DIR$/springboot-test/springboot-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-thymeleaf/springboot-thymeleaf.iml" filepath="$PROJECT_DIR$/springboot-thymeleaf/springboot-thymeleaf.iml" />
+    </modules>
+  </component>
+</project>
