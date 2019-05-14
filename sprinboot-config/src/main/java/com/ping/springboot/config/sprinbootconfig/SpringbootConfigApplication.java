@@ -16,6 +16,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling
 public class SpringbootConfigApplication {
     private static final Logger LOGGER = LoggerFactory.getLogger(SpringbootConfigApplication.class);
+
     public static void main(String[] args) {
         System.out.println("The Service to start");
         SpringApplication.run(SpringbootConfigApplication.class, args);
@@ -32,6 +33,6 @@ public class SpringbootConfigApplication {
         /**
          * 关闭Banner方法二
          */
-       // new SpringApplicationBuilder(Application.class).bannerMode(Banner.Mode.OFF).run(args);
+        // new SpringApplicationBuilder(Application.class).bannerMode(Banner.Mode.OFF).run(args);
     }
 }

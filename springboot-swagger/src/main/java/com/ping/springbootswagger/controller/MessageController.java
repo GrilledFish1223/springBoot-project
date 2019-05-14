@@ -16,16 +16,17 @@ import java.util.List;
 
 /**
  * <p>
- *      value           url 的路径值
- *      tags            如果设置这个值， value 的值会被覆盖
- *      description     对 API 资源的描述
- *      produces        For example, "application/json, application/xml"
- *      consumes        For example, "application/json, application/xml"
- *      protocols       Possible values: http, https, ws, wss
- *      authorizations  ⾼级特性认证时配置
- *      hidden          配置为 true 将在⽂档中隐藏
+ * value           url 的路径值
+ * tags            如果设置这个值， value 的值会被覆盖
+ * description     对 API 资源的描述
+ * produces        For example, "application/json, application/xml"
+ * consumes        For example, "application/json, application/xml"
+ * protocols       Possible values: http, https, ws, wss
+ * authorizations  ⾼级特性认证时配置
+ * hidden          配置为 true 将在⽂档中隐藏
  *
  * </p>
+ *
  * @version $Id MessageController.java, v 1.0 2019-05-05 20:55 zsp $$
  * @author: zhangsp
  */
@@ -40,8 +41,8 @@ public class MessageController {
     @ApiOperation(
             value = "消息列表",
             notes = "完整的消息内容列表",
-            produces="application/json, application/xml",
-            consumes="application/json, application/xml",
+            produces = "application/json, application/xml",
+            consumes = "application/json, application/xml",
             response = List.class)
     @GetMapping(value = "messages")
     public List<Message> list() {
@@ -59,7 +60,7 @@ public class MessageController {
     })
     @PostMapping(value = "message")
     public Message create(Message message) {
-        System.out.println("message===="+message.toString());
+        System.out.println("message====" + message.toString());
         message = this.messageRepository.save(message);
         return message;
     }
@@ -80,9 +81,9 @@ public class MessageController {
         return this.messageRepository.update(message);
     }
 
-    @PatchMapping(value="/message/text")
+    @PatchMapping(value = "/message/text")
     public BaseResult<Message> patch(Message message) {
-        Message messageResult=this.messageRepository.updateText(message);
+        Message messageResult = this.messageRepository.updateText(message);
         return BaseResult.successWithData(messageResult);
     }
 

@@ -8,7 +8,6 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
 /**
- *
  * 通用响应对象
  *
  * @version $Id BaseResult.java, v 1.0 2019-05-05 21:19 zsp $$
@@ -85,7 +84,6 @@ public class BaseResult<T> {
     public void setData(T data) {
         this.data = data;
     }
-
 
 
     public static class ResponseParam {

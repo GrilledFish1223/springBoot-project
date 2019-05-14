@@ -41,13 +41,13 @@ public class MyInterceptor implements HandlerInterceptor {
 
             JSONObject jsonObject = JSON.parseObject(bodyString);
             if (jsonObject.containsKey("test")) {
-                String o = ""+jsonObject.getJSONObject("test").get("value");
+                String o = "" + jsonObject.getJSONObject("test").get("value");
                 cleanXss(o.trim());
                 return true;
             } else {
                 return false;
             }
-        }catch (Exception e) {
+        } catch (Exception e) {
             LOGGER.error("handle interceptor error, ", e);
         }
         return false;
@@ -63,7 +63,7 @@ public class MyInterceptor implements HandlerInterceptor {
 
     }
 
-    public String  cleanXss (String value) {
+    public String cleanXss(String value) {
         value = value.replaceAll("_", "\\\\_");
 
         return value;

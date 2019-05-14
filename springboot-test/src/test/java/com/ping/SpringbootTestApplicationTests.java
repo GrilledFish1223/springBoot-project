@@ -25,7 +25,7 @@ public class SpringbootTestApplicationTests {
     }
 
     @Test
-    public void welcomeTest() throws Exception{
+    public void welcomeTest() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.APPLICATION_JSON))
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andDo(MockMvcResultHandlers.print())

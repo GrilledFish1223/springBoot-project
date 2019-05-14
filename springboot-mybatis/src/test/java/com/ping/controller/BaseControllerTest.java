@@ -11,6 +11,7 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 /**
  * Controller测试基类
+ *
  * @param <T>
  */
 @WebAppConfiguration
@@ -32,13 +33,14 @@ public class BaseControllerTest<T> extends BaseTest {
 
     /**
      * get请求
+     *
      * @param url 请求路径
      * @return result
      * @throws Exception
      */
     public ControllerTestResult get(String url) throws Exception {
         MvcResult mvcResult = mvc.perform((MockMvcRequestBuilders.get(url))
-        .accept(MediaType.APPLICATION_JSON)).andReturn();
+                .accept(MediaType.APPLICATION_JSON)).andReturn();
         ControllerTestResult result = new ControllerTestResult();
         result.setStatus(mvcResult.getResponse().getStatus());
         result.setContent(mvcResult.getResponse().getContentAsString());
@@ -47,12 +49,13 @@ public class BaseControllerTest<T> extends BaseTest {
 
     /**
      * post 请求
-     * @param url 请求路径
+     *
+     * @param url       请求路径
      * @param jsonValue json对象
      * @return result
      * @throws Exception
      */
-    public ControllerTestResult post(String url,String jsonValue) throws Exception {
+    public ControllerTestResult post(String url, String jsonValue) throws Exception {
         MvcResult mvcResult = mvc.perform((MockMvcRequestBuilders.post(url))
                 .content(jsonValue).contentType(MediaType.APPLICATION_JSON)
                 .accept(MediaType.APPLICATION_JSON)).andReturn();
@@ -64,12 +67,13 @@ public class BaseControllerTest<T> extends BaseTest {
 
     /**
      * put 请求
-     * @param url 请求路径
+     *
+     * @param url       请求路径
      * @param jsonValue json
      * @return result
      * @throws Exception
      */
-    public ControllerTestResult put(String url,String jsonValue) throws Exception {
+    public ControllerTestResult put(String url, String jsonValue) throws Exception {
         MvcResult mvcResult = mvc.perform((MockMvcRequestBuilders.put(url))
                 .content(jsonValue).contentType(MediaType.APPLICATION_JSON)
                 .accept(MediaType.APPLICATION_JSON)).andReturn();
@@ -81,6 +85,7 @@ public class BaseControllerTest<T> extends BaseTest {
 
     /**
      * delete 请求
+     *
      * @param url 请求路径
      * @return result
      * @throws Exception

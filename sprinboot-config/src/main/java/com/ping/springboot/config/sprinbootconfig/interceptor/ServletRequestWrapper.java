@@ -31,34 +31,34 @@ public class ServletRequestWrapper extends HttpServletRequestWrapper {
 
     @Override
     public BufferedReader getReader() throws IOException {
-       return new BufferedReader(new InputStreamReader(getInputStream()));
+        return new BufferedReader(new InputStreamReader(getInputStream()));
     }
 
     @Override
     public ServletInputStream getInputStream() throws IOException {
-       final ByteArrayInputStream bais = new ByteArrayInputStream(body);
+        final ByteArrayInputStream bais = new ByteArrayInputStream(body);
 
-       return new ServletInputStream() {
-           @Override
-           public boolean isFinished() {
-               return false;
-           }
+        return new ServletInputStream() {
+            @Override
+            public boolean isFinished() {
+                return false;
+            }
 
-           @Override
-           public boolean isReady() {
-               return false;
-           }
+            @Override
+            public boolean isReady() {
+                return false;
+            }
 
-           @Override
-           public void setReadListener(ReadListener readListener) {
+            @Override
+            public void setReadListener(ReadListener readListener) {
 
-           }
+            }
 
-           @Override
-           public int read() throws IOException {
-               return bais.read();
-           }
-       };
+            @Override
+            public int read() throws IOException {
+                return bais.read();
+            }
+        };
     }
 
     public String getBodyString(final HttpServletRequest request) {
@@ -69,7 +69,7 @@ public class ServletRequestWrapper extends HttpServletRequestWrapper {
             inputStream = cloneInputStream(request.getInputStream());
             reader = new BufferedReader(new InputStreamReader(inputStream, Charset.forName("UTF-8")));
             String line;
-            while ((line = reader.readLine())!= null) {
+            while ((line = reader.readLine()) != null) {
                 sb.append(line);
             }
         } catch (IOException e) {
@@ -87,7 +87,7 @@ public class ServletRequestWrapper extends HttpServletRequestWrapper {
                 try {
                     reader.close();
                 } catch (IOException e) {
-                    LOGGER.error("close BufferedReader error, " , e);
+                    LOGGER.error("close BufferedReader error, ", e);
                 }
             }
         }

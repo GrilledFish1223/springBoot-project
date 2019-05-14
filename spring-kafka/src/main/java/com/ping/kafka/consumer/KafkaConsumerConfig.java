@@ -27,16 +27,16 @@ import java.util.Map;
 @EnableKafka
 public class KafkaConsumerConfig {
     /**
-     *  kafka:
-     *     bootstrap-servers: 192.168.14.38:9092
-     *     consumer:
-     *       auto-commit-interval: 100
-     *       auto-offset-reset: latest
-     *       enable-auto-commit: false
-     *       group-id: test_group
-     *       max-poll-records: 5000
-     *     template:
-     *       default-topic: test_zsp
+     * kafka:
+     * bootstrap-servers: 192.168.14.38:9092
+     * consumer:
+     * auto-commit-interval: 100
+     * auto-offset-reset: latest
+     * enable-auto-commit: false
+     * group-id: test_group
+     * max-poll-records: 5000
+     * template:
+     * default-topic: test_zsp
      */
     @Value("${spring.kafka.bootstrap-servers}")
     private String server;
@@ -54,11 +54,11 @@ public class KafkaConsumerConfig {
     private String topic;
 
     @Bean
-    public ConcurrentMessageListenerContainer<String,String> testMessageListenerContatiner() {
+    public ConcurrentMessageListenerContainer<String, String> testMessageListenerContatiner() {
         ContainerProperties properties = new ContainerProperties(topic);
         properties.setClientId("test");
-        ConcurrentMessageListenerContainer<String,String> container =
-                new ConcurrentMessageListenerContainer<>(consumerFactory(),properties);
+        ConcurrentMessageListenerContainer<String, String> container =
+                new ConcurrentMessageListenerContainer<>(consumerFactory(), properties);
         container.setConcurrency(3);
         container.getContainerProperties().setPollTimeout(1500);
         container.getContainerProperties().setAckMode(AbstractMessageListenerContainer.AckMode.MANUAL);
@@ -68,17 +68,18 @@ public class KafkaConsumerConfig {
         return container;
     }
 
-    private ConsumerFactory<String,String> consumerFactory() {
+    private ConsumerFactory<String, String> consumerFactory() {
         return new DefaultKafkaConsumerFactory<>(consumerConfigs());
     }
-    private Map<String ,Object> consumerConfigs() {
-        Map<String,Object> props = new HashMap<>(16);
+
+    private Map<String, Object> consumerConfigs() {
+        Map<String, Object> props = new HashMap<>(16);
         props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, server);
-        props.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG,false);
-        props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG,autoOffsetReset);
-        props.put(ConsumerConfig.MAX_POLL_RECORDS_CONFIG,maxPollRecords);
+        props.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, false);
+        props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, autoOffsetReset);
+        props.put(ConsumerConfig.MAX_POLL_RECORDS_CONFIG, maxPollRecords);
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
-        props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG,StringDeserializer.class);
+        props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
         return props;
     }
 }

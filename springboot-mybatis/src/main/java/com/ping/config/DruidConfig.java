@@ -31,9 +31,11 @@ public class DruidConfig {
     @Value("${druid.allow.ip}")
     private String allowIp;
 
-    /**必须配置数据源，不然无法获取到sql监控，与sql防火墙监控*/
+    /**
+     * 必须配置数据源，不然无法获取到sql监控，与sql防火墙监控
+     */
     @Bean(name = "default_databaseSource")
-    @ConfigurationProperties(prefix="spring.datasource")
+    @ConfigurationProperties(prefix = "spring.datasource")
     public DataSource druidDataSource() {
         return new DruidDataSource();
     }

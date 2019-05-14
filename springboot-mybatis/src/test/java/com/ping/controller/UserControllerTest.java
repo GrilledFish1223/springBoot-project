@@ -19,7 +19,7 @@ public class UserControllerTest extends BaseControllerTest<UserController> {
         String url = "/selectUser/1";
         ControllerTestResult result = this.get(url);
         int status = result.getStatus();
-        Assert.assertEquals(200,status);
+        Assert.assertEquals(200, status);
         System.out.println(result.getContent());
     }
 }

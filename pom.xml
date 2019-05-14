@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-<modelVersion>4.0.0</modelVersion>
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-<groupId>com.ping.springboot</groupId>
-<artifactId>springBoot-project-s1</artifactId>
-<version>1.0-SNAPSHOT</version>
+	<groupId>com.ping.springboot</groupId>
+	<artifactId>springBoot-project-s1</artifactId>
+	<version>1.0-SNAPSHOT</version>
 
-<modules>
-    <module>sprinboot-config</module>
-    <module>springboot-redis</module>
-    <module>springboot-mybatis</module>
-    <module>spring-kafka</module>
-    <module>springboot-test</module>
-    <module>springboot-mongo</module>
-    <!--<module>spring-boot-docker</module>-->
-</modules>
+	<modules>
+		<module>sprinboot-config</module>
+		<module>springboot-redis</module>
+		<module>springboot-mybatis</module>
+		<module>spring-kafka</module>
+		<module>springboot-test</module>
+		<module>springboot-mongo</module>
+		<!--<module>spring-boot-docker</module>-->
+		<module>springboot-jdbc</module>
+	</modules>
 
-<packaging>pom</packaging>
-<name>springboot</name>
+	<packaging>pom</packaging>
+	<name>springboot</name>
 
 </project>

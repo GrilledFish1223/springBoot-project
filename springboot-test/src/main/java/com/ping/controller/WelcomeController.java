@@ -29,7 +29,7 @@ public class WelcomeController {
     public String user(Map<String, Object> model, HttpServletRequest request) {
         model.put("username", "neo");
         model.put("salary", 666);
-        request.getSession().setAttribute("count",6);
+        request.getSession().setAttribute("count", 6);
         return "user";
     }
 

@@ -23,7 +23,7 @@
             <fileNamePattern>log/springboot.%d.%i.log</fileNamePattern>
             <!-- 每产生一个日志文件，该日志文件的保存期限为30天 -->
             <maxHistory>30</maxHistory>
-            <timeBasedFileNamingAndTriggeringPolicy  class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
                 <!-- maxFileSize:这是活动文件的大小，默认值是10MB，测试时可改成1KB看效果 -->
                 <maxFileSize>1KB</maxFileSize>
             </timeBasedFileNamingAndTriggeringPolicy>
@@ -39,30 +39,30 @@
     </appender>
 
     <!-- 开发环境 -->
-   <!-- <springProfile name="dev">
-        <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
-            <encoder>
-                <pattern>${PATTERN}</pattern>
-            </encoder>
-        </appender>
+    <!-- <springProfile name="dev">
+         <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+             <encoder>
+                 <pattern>${PATTERN}</pattern>
+             </encoder>
+         </appender>
 
-        <logger name="com.roncoo.education" level="debug"/>
+         <logger name="com.roncoo.education" level="debug"/>
 
-        <root level="info">
-            <appender-ref ref="CONSOLE" />
-        </root>
-    </springProfile>
--->
+         <root level="info">
+             <appender-ref ref="CONSOLE" />
+         </root>
+     </springProfile>
+ -->
     <!-- 测试环境 -->
     <springProfile name="test">
         <!-- 每天产生一个文件 -->
         <appender name="TEST-FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-             文件路径
+            文件路径
             <file>${TEST_FILE_PATH}</file>
             <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-                 文件名称
+                文件名称
                 <fileNamePattern>${TEST_FILE_PATH}/info.%d{yyyy-MM-dd}.log</fileNamePattern>
-                 文件最大保存历史数量
+                文件最大保存历史数量
                 <MaxHistory>100</MaxHistory>
             </rollingPolicy>
 
@@ -72,18 +72,18 @@
         </appender>
 
         <root level="info">
-            <appender-ref ref="TEST-FILE" />
+            <appender-ref ref="TEST-FILE"/>
         </root>
     </springProfile>
 
     <!-- 控制台输出日志级别 -->
     <root level="info">
-        <appender-ref ref="STDOUT" />
+        <appender-ref ref="STDOUT"/>
     </root>
     <!-- 指定项目中某个包，当有日志操作行为时的日志记录级别 -->
     <!-- com.liyan为根包，也就是只要是发生在这个根包下面的所有日志操作行为的权限都是DEBUG -->
     <!-- 级别依次为【从高到低】：FATAL > ERROR > WARN > INFO > DEBUG > TRACE  -->
     <logger name="com.ping.mapper" level="DEBUG">
-        <appender-ref ref="springbootlog" />
+        <appender-ref ref="springbootlog"/>
     </logger>
 </configuration>

@@ -16,15 +16,15 @@ import java.util.List;
  * @copyright: @2019
  */
 @Component
-public class TestConsumerEvent implements BatchAcknowledgingMessageListener<String,String> {
+public class TestConsumerEvent implements BatchAcknowledgingMessageListener<String, String> {
     private static final Logger LOGGER = LoggerFactory.getLogger(TestConsumerEvent.class);
 
     @Override
     public void onMessage(List<ConsumerRecord<String, String>> list, Acknowledgment acknowledgment) {
         String jsonValue = null;
-       for (ConsumerRecord<String,String> record :list) {
-           jsonValue = record.value();
+        for (ConsumerRecord<String, String> record : list) {
+            jsonValue = record.value();
             LOGGER.info("message:" + jsonValue);
-       }
+        }
     }
 }

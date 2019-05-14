@@ -36,7 +36,7 @@ public class CompletableFutureTest {
      */
     private double calculaterice(String product) {
         delay();
-        return random.nextDouble()*product.charAt(0) + product.charAt(1);
+        return random.nextDouble() * product.charAt(0) + product.charAt(1);
     }
 
     /**
@@ -46,7 +46,7 @@ public class CompletableFutureTest {
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
-            LOGGER.error("线程中断异常{}"+ e.getMessage());
+            LOGGER.error("线程中断异常{}" + e.getMessage());
         }
     }
 
@@ -65,49 +65,53 @@ public class CompletableFutureTest {
            }
         }).start();
         return futurePrice;*/
-       return CompletableFuture.supplyAsync(()->calculaterice(product));
+        return CompletableFuture.supplyAsync(() -> calculaterice(product));
     }
 
     private static List<CompletableFutureTest> shops = Arrays.asList(
             new CompletableFutureTest("A"),
-            new  CompletableFutureTest("B"),
-            new  CompletableFutureTest("C"),
-            new  CompletableFutureTest("D"));
+            new CompletableFutureTest("B"),
+            new CompletableFutureTest("C"),
+            new CompletableFutureTest("D"));
 
     private static List<String> findPrice(String product) {
-        return shops.stream().map(shop -> String.format("%s price is %.2f",shop.getName(),shop.getPrice(product)))
+        return shops.stream().map(shop -> String.format("%s price is %.2f", shop.getName(), shop.getPrice(product)))
                 .collect(Collectors.toList());
     }
 
     /**
-     *  使用平行流对请求进行并行操作
+     * 使用平行流对请求进行并行操作
+     *
      * @param product
      * @return
      */
     private static List<String> parallelFindPrices(String product) {
         return shops.parallelStream()
-                .map(shop -> String.format("%s price is %.2f",shop.getName(),shop.getPrice(product)))
+                .map(shop -> String.format("%s price is %.2f", shop.getName(), shop.getPrice(product)))
                 .collect(Collectors.toList());
     }
 
     /**
      * 最佳价格查询器(异步调用实现)
+     *
      * @param product
      * @return
      */
     public static List<String> asyncFindPrices(String product) {
         List<CompletableFuture<String>> priceFuture = shops.stream()
                 .map(shop -> CompletableFuture.supplyAsync(
-                        () -> String.format("%s price is %.2f",shop.getName(),shop.getPrice(product))))
+                        () -> String.format("%s price is %.2f", shop.getName(), shop.getPrice(product))))
                 .collect(Collectors.toList());
 
-                return priceFuture.stream().map(CompletableFuture::join)
-                        .collect(Collectors.toList());
+        return priceFuture.stream().map(CompletableFuture::join)
+                .collect(Collectors.toList());
     }
 
-    private static final Executor executor = Executors.newFixedThreadPool(Math.min(shops.size(),100));
+    private static final Executor executor = Executors.newFixedThreadPool(Math.min(shops.size(), 100));
+
     /**
      * 最佳价格查询器(异步调用实现,自定义执行器)
+     *
      * @param product
      * @return
      */
@@ -120,6 +124,7 @@ public class CompletableFutureTest {
         return priceFuture.stream().map(CompletableFuture::join)
                 .collect(Collectors.toList());
     }
+
     public static void main(String[] args) {
        /* CompletableFutureTest shop = new CompletableFutureTest("Base Product");
         long start = System.nanoTime();
@@ -138,7 +143,7 @@ public class CompletableFutureTest {
         long start = System.nanoTime();
         System.out.println(asyncFindpricesThread("myPhones27s"));
         long duration = (System.nanoTime() - start) / 1_000_000;
-        System.out.println("Done in " + duration+" msecs");
+        System.out.println("Done in " + duration + " msecs");
     }
 
 }

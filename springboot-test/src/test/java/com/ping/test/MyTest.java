@@ -15,7 +15,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 
 public class MyTest {
-   public static Set<Long> result = new HashSet<>();
+    public static Set<Long> result = new HashSet<>();
 
     private static final long SERVICE_NUM = 0;
     private static final long NODE_NUM = 6;
@@ -27,6 +27,7 @@ public class MyTest {
     private static final Integer ONE_ONE = 131_071;
 
     private static AtomicInteger atomicInteger = new AtomicInteger();
+
     public static long getRecordIdPrimaryKey(long time) {
         long recordId = 0;
         recordId = recordId | (SERVICE_NUM << SIXONE);

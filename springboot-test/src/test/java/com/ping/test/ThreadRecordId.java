@@ -19,7 +19,7 @@ public class ThreadRecordId implements Runnable {
 
     @Override
     public void run() {
-        for (int i=0;i< COUNTS;i++) {
+        for (int i = 0; i < COUNTS; i++) {
 
             long recordIdPrimaryKey = MyTest.getRecordIdPrimaryKey(new Date().getTime());
             MyTest.result.add(recordIdPrimaryKey);

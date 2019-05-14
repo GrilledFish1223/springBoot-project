@@ -12,7 +12,6 @@ from kafka import KafkaProducer
 from kafka import KafkaConsumer
 from kafka.errors import KafkaError
 
-
 KAFAKA_HOST = "127.0.0.1"
 KAFAKA_PORT = 9092
 KAFAKA_TOPIC = "foobar"
@@ -23,12 +22,12 @@ class Kafka_producer():
     生产模块：根据不同的key，区分消息
     '''
 
-    def __init__(self, kafkahost,kafkaport, kafkatopic, key):
+    def __init__(self, kafkahost, kafkaport, kafkatopic, key):
         self.kafkaHost = kafkahost
         self.kafkaPort = kafkaport
         self.kafkatopic = kafkatopic
         self.key = key
-        self.producer = KafkaProducer(bootstrap_servers = '{kafka_host}:{kafka_port}'.format(
+        self.producer = KafkaProducer(bootstrap_servers='{kafka_host}:{kafka_port}'.format(
             kafka_host=self.kafkaHost,
             kafka_port=self.kafkaPort)
         )
@@ -43,7 +42,6 @@ class Kafka_producer():
             print e
 
 
-
 class Kafka_consumer():
     '''
     消费模块: 通过不同groupid消费topic里面的消息
@@ -55,10 +53,10 @@ class Kafka_consumer():
         self.kafkatopic = kafkatopic
         self.groupid = groupid
         self.key = key
-        self.consumer = KafkaConsumer(self.kafkatopic, group_id = self.groupid,
-                                      bootstrap_servers = '{kafka_host}:{kafka_port}'.format(
+        self.consumer = KafkaConsumer(self.kafkatopic, group_id=self.groupid,
+                                      bootstrap_servers='{kafka_host}:{kafka_port}'.format(
                                           kafka_host=self.kafkaHost,
-                                          kafka_port=self.kafkaPort )
+                                          kafka_port=self.kafkaPort)
                                       )
 
     def consume_data(self):
@@ -91,7 +89,6 @@ def main(xtype, group, key):
             print 'msg---------------->', msg
             print 'key---------------->', msg.key
             print 'offset---------------->', msg.offset
-
 
 
 if __name__ == '__main__':

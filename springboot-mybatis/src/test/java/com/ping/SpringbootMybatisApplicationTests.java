@@ -15,6 +15,7 @@ public class SpringbootMybatisApplicationTests {
 
     @Resource
     private UserService uerService;
+
     @Test
     public void testUserService() {
         UserEntity user = UserEntity.builder()
