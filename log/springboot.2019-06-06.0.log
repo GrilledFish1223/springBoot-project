@@ -1,0 +1,11 @@
+2019-06-06 17:48:08,934 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM users 
+2019-06-06 17:48:09,014 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-06-06 17:48:09,106 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-06-06 17:48:18,649 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO users(userName, passWord, user_sex)VALUES(?, ?, ?) 
+2019-06-06 17:48:18,661 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, null, null
+2019-06-06 17:48:18,682 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-06-06 17:49:00,000 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO users(userName, passWord, user_sex)VALUES(?, ?, ?) 
+2019-06-06 17:49:00,002 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, null, null
+2019-06-06 17:49:00,021 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2019-06-06 17:50:50,878 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO users(userName, passWord, user_sex)VALUES(?, ?, ?) 
+2019-06-06 17:50:50,882 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, null, null
