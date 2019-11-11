@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
     <classPathEntry
-            location="C:\Users\huangyicao\Downloads\soft\postgresql-9.2-1003-jdbc4.jar"/>
+            location="/Users/zhangshengping/Downloads/mysql-connector-java-6.0.6.jar"/>
     <!-- 数据库驱动:选择你的本地硬盘上面的数据库驱动包-->
 
     <context id="DB2Tables" targetRuntime="MyBatis3">
@@ -14,8 +14,8 @@
             <property name="suppressAllComments" value="true"/>
         </commentGenerator>
         <!--数据库链接URL，用户名、密码 -->
-        <jdbcConnection driverClass="org.postgresql.Driver" connectionURL="jdbc:postgresql://192.168.130.248:5432/test"
-                        userId="postgres" password="postgres">
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://192.144.227.90:3340/test"
+                        userId="root" password="123456">
         </jdbcConnection>
         <javaTypeResolver>
             <property name="forceBigDecimals" value="false"/>

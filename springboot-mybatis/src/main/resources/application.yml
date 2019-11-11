@@ -6,9 +6,9 @@ spring:
   datasource:
     druid:
       one:
-        url: jdbc:postgresql://192.168.14.38:5432/test?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
-        username: postgres
-        password: postgres
+        url: jdbc:jdbc:mysql://192.144.227.90:3340/test?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
+        username: root
+        password: 123456
         driver-class-name: org.postgresql.Driver
         initial-size: 3
         max-active: 10
@@ -16,7 +16,7 @@ spring:
         max-wait: 60000
 
       tow:
-        url: jdbc:mysql://192.168.14.38:3307/test?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
+        url: jdbc:mysql://192.168.14.38:3340/test?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
         username: root
         password: 123456
         driver-class-name: com.mysql.cj.jdbc.Driver
